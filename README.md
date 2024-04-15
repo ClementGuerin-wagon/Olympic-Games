@@ -11,6 +11,8 @@
 5. Research Questions and Exploratory Analysis
 6. Predictive Analysis
 7. Key Findings and Conclusion
+
+**Tools : SQL (BigQuery, Python (skicit-learn), Looker Studio**
 ---
 1. **Introduction**
 
@@ -37,6 +39,8 @@ We then examined the structure of each table. We quickly discarded the olympic_a
 - When more than 60% of the values were null in a column, we deleted the column.
 - For categorical data, we handled null values on a case-by-case basis. Either by replacing the null value with the most frequent value or with another value. For example, in the Athletes table, the "Medals" column contained values such as "Gold," "Silver," "Bronze," or "null." We replaced the "null" values with "No medal."
 
+
+
 **5. Research Questions and Exploratory Analysis**
 
 Once our tables were cleaned, we brainstormed potential research questions. We listed all our ideas for each table in a shared Notion page. Here are some examples:
@@ -56,6 +60,7 @@ From there, we attempted to answer each question by executing SQL queries in Big
 
 **6. Predictive Analysis**
 Having identified that hosting the Games had a significant impact on the host country's performance, we naturally thought of predicting the number of medals France could obtain this summer. To do this, we used the Scikit-learn library in Python and a linear regression model. After training our model, we obtained a value of 32.5 medals, which may seem low at first. This figure needs to be reassessed considering that our dataset contained values for both the Summer and Winter Games. Therefore, we revised this figure to 55 medals (the summer/winter ratio being 85%). We also obtained a Mean Absolute Error of 14, which means that France could obtain between 41 and 69 medals. This range may seem wide, but it remains consistent with the forecasts of the international press, which are between 52 and 63 medals on average.
+
 
 **7. Key Findings and Conclusion**
 Our work has been rich in insights. It confirmed insights we already suspected:
