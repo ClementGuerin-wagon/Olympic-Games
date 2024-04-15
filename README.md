@@ -11,8 +11,9 @@
 5. Research Questions and Exploratory Analysis
 6. Predictive Analysis
 7. Key Findings and Conclusion
+---
+**Tools: SQL BigQuery, Python (skicit-learn), Looker Studio**
 
-**Tools : SQL (BigQuery, Python (skicit-learn), Looker Studio**
 ---
 1. **Introduction**
 
